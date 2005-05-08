@@ -1,0 +1,76 @@
+
+VirtualView (vue de l'arbre sans le header)
+-Left
+-Top
+-Width
+-Height
+-totalheight
+-totalwidth (depends des colonnes ou de la mesure du texte)
+->MouseDown
+->MouseUp
+->KeyDown
+->KeyUp
+<- UpdateNeeded(Rect)
+-AllowDrag
+-AllowDrop
+
+Header
+-AllowDrag
+HeaderColonne
+-AllowSize
+-AllowDrag
+
+Personnalisation des couleurs
++Header
+	-FontColor
+	-FontName
+	-FontSize
+	-Color
+	-alignement
+	-valignement
+
++HeaderColonne
+	-Text
+	-FontColor
+	-FontSize
+	-Color
+	-Alignment
+	-VAlignment
+	-ImageIndex
+	-WrappedText, EllipsisText, ...
+	-ImageIndex
+
++GridLinesColor
++SelectedColor
++UnFocusSelectedColor
++SelectedPathColor (Pen + Color)
++TreeLinesColor
+
+Customization du Paint
++OnPrepareDrawCell
+	-Clip
+	-Bounds
++OnDrawCell
+	-Color
+	-FontColor
+	-FontSize
+	-Text
+	-Alignment
+	-VAlignment
+	-DefaultDrawing
+	-WrappedText, EllipsisText, ...
+
++OnDrawHeaderCol
+	-Color
+	-FontColor
+	-FontSize
+	-Text
+	-Alignment
+	-VAlignment
+	-DefaultDrawing
+	-WrappedText, EllipsisText, ...
+
+
+
+
+	

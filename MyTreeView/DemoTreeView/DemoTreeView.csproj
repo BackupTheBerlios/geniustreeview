@@ -1,0 +1,268 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{A2DD8814-7FE3-43C0-8DED-272F904E41C4}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "App.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "DemoTreeView"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "DemoTreeView"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "C:\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "Genius.Controls"
+                    AssemblyName = "Genius.Controls"
+                    HintPath = "lib\Genius.Controls.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form1.cs"
+                    SubType = "Form"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Form1.resx"
+                    DependentUpon = "Form1.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Program.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TabbedDemo.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TabbedDemo.resx"
+                    DependentUpon = "TabbedDemo.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Editor\UCEditor.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Editor\UCEditor.resx"
+                    DependentUpon = "UCEditor.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "images\fond1.jpg"
+                    BuildAction = "EmbeddedResource"
+                />
+                <Folder RelPath = "lib\" />
+                <File
+                    RelPath = "UserControl\CustomDrawDemoCtl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\CustomDrawDemoCtl.resx"
+                    DependentUpon = "CustomDrawDemoCtl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\DemoEditors.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\DemoEditors.resx"
+                    DependentUpon = "DemoEditors.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\DragAndDropDemoCtl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\DragAndDropDemoCtl.resx"
+                    DependentUpon = "DragAndDropDemoCtl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\FixedColumnDemoCtl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\FixedColumnDemoCtl.resx"
+                    DependentUpon = "FixedColumnDemoCtl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\StandardDemo1Ctl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\StandardDemo1Ctl.resx"
+                    DependentUpon = "StandardDemo1Ctl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\StandardDemoCtl.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\StandardDemoCtl.resx"
+                    DependentUpon = "StandardDemoCtl.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\TestChapter.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\TestChapter.resx"
+                    DependentUpon = "TestChapter.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\TestDataSource.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\TestDataSource.resx"
+                    DependentUpon = "TestDataSource.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\TestDrawingOptions.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\TestDrawingOptions.resx"
+                    DependentUpon = "TestDrawingOptions.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\TestEvents.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\TestEvents.resx"
+                    DependentUpon = "TestEvents.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "UserControl\TestVisibility.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "UserControl\TestVisibility.resx"
+                    DependentUpon = "TestVisibility.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

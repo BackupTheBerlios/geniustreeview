@@ -1,0 +1,2987 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Genius.Controls</name>
+    </assembly>
+    <members>
+        <member name="T:Genius.Controls.Diagnostics.Counter">
+            <summary>
+            classe pour effectuer des mesures de performances
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.Diagnostics.Counter.#ctor">
+            <summary>
+            constructeur par défaut
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.Diagnostics.Counter.Start">
+            <summary>
+            demarre le compteur
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.Diagnostics.Counter.Stop">
+            <summary>
+            stoppe le compteur
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.Diagnostics.Counter.Elapse">
+            <summary>
+            renvoi le temps en ms
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.Diagnostics.Counter.ElapseD">
+            <summary>
+            renvoi le temps en ms avec des decimales
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Genius.Controls.DrawTabEventArgs">
+            <summary>
+            Summary description for DrawTabEventArgs.
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawTabEventArgs.DefaultDrawing">
+            <summary>
+            indique si le dessin par défaut doit être fait
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.DrawTabEventArgs.graphics">
+            <summary>
+            le graphics à utiliser pour dessiner
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.DrawTabEventArgs.Rect">
+            <summary>
+            le retangle concerné
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.HorizontalTab">
+            <summary>
+            Summary description for HorizontalTab.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTab.#ctor">
+            <summary>
+            constructeur par défaut
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTab.DisplayRectangle">
+            <summary>
+            le rectangle disponible pour les controls enfant
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTab.VerticalTextAlignment">
+            <summary>
+            alignement vertical du texte
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTab.HorizontalTextAlignement">
+            <summary>
+            alignement horizontal du texte
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTab.Text">
+            <summary>
+            le texte du tab
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTab.Margins">
+            <summary>
+            les marges, influe directement sur le <see cref="P:Genius.Controls.HorizontalTab.DisplayRectangle"/>
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTab.TabVisible">
+            <summary>
+            visibilité du tab
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.HorizontalTabCollection">
+            <summary>
+            Summary description for HorizontalTabCollection.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.#ctor(Genius.Controls.HorizontalTabs)">
+            <summary>
+            constructeur de la collection de tab
+            </summary>
+            <param name="owner"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.AddTab(Genius.Controls.HorizontalTab)">
+            <summary>
+            ajoute un <see cref="T:Genius.Controls.HorizontalTab"/>
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.AddRange(Genius.Controls.HorizontalTab[])">
+            <summary>
+            ajoute une liste de <see cref="T:Genius.Controls.HorizontalTab"/>, utiliser par le designer de visual studio
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.Remove(Genius.Controls.HorizontalTab)">
+            <summary>
+            suppression d'un <see cref="T:Genius.Controls.HorizontalTab"/>
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.IndexOf(Genius.Controls.HorizontalTab)">
+            <summary>
+            renvoi l'index d'un <see cref="T:Genius.Controls.HorizontalTab"/>
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.Contains(Genius.Controls.HorizontalTab)">
+            <summary>
+            renvoi true si un <see cref="T:Genius.Controls.HorizontalTab"/> fait parti de la collection
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.RemoveAt(System.Int32)">
+            <summary>
+            enleve un <see cref="T:Genius.Controls.HorizontalTab"/> à un position précise
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.Insert(System.Int32,System.Object)">
+            <summary>
+            insère un <see cref="T:Genius.Controls.HorizontalTab"/> à un position précise
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.Remove(System.Object)">
+            <summary>
+            retire un <see cref="T:Genius.Controls.HorizontalTab"/> de la collection
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.Contains(System.Object)">
+            <summary>
+            renvoi true si la collection contient value
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.Clear">
+            <summary>
+            vide la collection
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.IndexOf(System.Object)">
+            <summary>
+            renvoi l'index d'un objet de la collection
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.CopyTo(System.Array,System.Int32)">
+            <summary>
+            copy le contenu de la collection dans un tableau
+            </summary>
+            <param name="array"></param>
+            <param name="index"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabCollection.GetEnumerator">
+            <summary>
+            renvoi un enumérateur sur la collection
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabCollection.Item(System.Int32)">
+            <summary>
+            renvoi un <see cref="T:Genius.Controls.HorizontalTab"/> à l'index "index"
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabCollection.IsReadOnly">
+            <summary>
+            la collection est elle en lecture seule
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabCollection.IsFixedSize">
+            <summary>
+            la taille de la colleciton est-elle fixe ?
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabCollection.IsSynchronized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabCollection.Count">
+            <summary>
+            renvoi le nombre de <see cref="T:Genius.Controls.HorizontalTab"/> dans la collection
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabCollection.SyncRoot">
+            <summary>
+            renvoi l'object SyncRoot
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TabOrientation">
+            <summary>
+            défini l'orientation des tabs
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TabOrientation.Left">
+            <summary>
+            les tabs sont horizontal situés à gauche
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TabOrientation.Bottom">
+            <summary>
+            les tabs sont vertical situés en bas
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnDrawTabDelegate">
+            <summary>
+            <see cref="E:Genius.Controls.HorizontalTabs.OnDrawTab"/>
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnBeforeTabChangeDelegate">
+            <summary>
+            delegate lors du changement de tab
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnAfterTabChangeDelegate">
+            <summary>
+            delegate lors du changement de tab
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.HorizontalTabs">
+            <summary>
+            Summary description for HorizontalTabs.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.#ctor">
+            <summary>
+            contructeur par défaut
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.GetHitTestInfo(System.Int32,System.Int32)">
+            <summary>
+            renvoi l'index du tab en dessous du point défini par x,y
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            dessin des tabs
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.UpdateRegion">
+            <summary>
+            met à jour la region du contrôle
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.OnSizeChanged(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.OnMouseLeave(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.CreateControlsInstance">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.CreateHandle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.OnHandleCreated(System.EventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.RemoveTabAt(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.RemoveAll">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.GetTabOnPoint(System.Drawing.Point)">
+            <summary>
+            
+            </summary>
+            <param name="pt"></param>
+            <returns></returns>
+        </member>
+        <member name="E:Genius.Controls.HorizontalTabs.OnDrawTab">
+            <summary>
+            delegate pour le dessin des tabs
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.HorizontalTabs.OnBeforeTabChange">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.HorizontalTabs.OnAfterTabChange">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.DisplayRectangle">
+            <summary>
+            le rectangle contenant les contrôles enfants
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.OrientationMatrix">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.TabsRegion">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.TabsWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.TabsHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.VisibleCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.Tabs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.SelectedIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.SelectedTab">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.Orientation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.HorizontalTabs.Margins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.HorizontalTabs.TabControlCollection">
+            <summary>
+            classe "container" des <see cref="T:Genius.Controls.HorizontalTab"/>
+            cette classe est instanciée <see cref="M:System.Windows.Forms.Control.CreateControlsInstance"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.TabControlCollection.#ctor(Genius.Controls.HorizontalTabs)">
+            <summary>
+            
+            </summary>
+            <param name="owner"></param>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.TabControlCollection.Add(System.Windows.Forms.Control)">
+            <summary>
+            Ajout d'un control, seul les <see cref="T:Genius.Controls.HorizontalTab"/> sont admis
+            </summary>
+            <param name="value"></param>
+            <exception cref="T:System.ArgumentException">est soulevée si value n'est pas un <see cref="T:Genius.Controls.HorizontalTab"/></exception>
+        </member>
+        <member name="M:Genius.Controls.HorizontalTabs.TabControlCollection.Remove(System.Windows.Forms.Control)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="T:Genius.Controls.TabChangeEventArgs">
+            <summary>
+            Summary description for TabChangeEventArgs.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TabChangeEventArgs.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="aTabSrc"></param>
+            <param name="aTabDest"></param>
+        </member>
+        <member name="P:Genius.Controls.TabChangeEventArgs.From">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TabChangeEventArgs.To">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TabBeforeChangeEventArgs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TabBeforeChangeEventArgs.#ctor(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="aTabSrc"></param>
+            <param name="aTabDest"></param>
+        </member>
+        <member name="P:Genius.Controls.TabBeforeChangeEventArgs.Allow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TabMargins">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TabMargins.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="left"></param>
+            <param name="top"></param>
+            <param name="right"></param>
+            <param name="bottom"></param>
+        </member>
+        <member name="M:Genius.Controls.TabMargins.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMargins.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMargins.op_Inequality(Genius.Controls.TabMargins,Genius.Controls.TabMargins)">
+            <summary>
+            
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMargins.op_Equality(Genius.Controls.TabMargins,Genius.Controls.TabMargins)">
+            <summary>
+            
+            </summary>
+            <param name="left"></param>
+            <param name="right"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Genius.Controls.TabMargins.Empty">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TabMargins.Left">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TabMargins.Top">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TabMargins.Right">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TabMargins.Bottom">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TabMarginsConverter">
+            <summary>
+            classe necessaire pour l'inspecteur de propriétés, la liste des marges
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="propertyValues"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="value"></param>
+            <param name="attributes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TabMarginsConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Genius.Controls.NativeWindow.BaseHintWindow">
+            <summary>
+            fenêtre de base pour la gestion des hint
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NativeWindow.BaseNativeWindow">
+            <summary>
+            Summary description for BaseNativeWindow.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NativeWindow.BaseNativeWindow.DoPaint(System.Drawing.Graphics)">
+            <summary>
+            à surcharger par le descendant, pour le paint du hint
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Genius.Controls.NativeWindow.BaseNativeWindow.AfterHandleCreated">
+            <summary>
+            à surcharger par les descendant, cette méthode est appelé à la fin de 
+            la création de la fenêtre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseNativeWindow.Alpha">
+            <summary>
+            transparence de la fenêtre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseNativeWindow.WindowRect">
+            <summary>
+            retourne le rectangle de la fenêtre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseNativeWindow.Position">
+            <summary>
+            position de la fenêtre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseNativeWindow.WindowSize">
+            <summary>
+            taille de la fenêtre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseNativeWindow.ClientRectangle">
+            <summary>
+            retourne le rectangle de l'aire cliente
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseNativeWindow.Visible">
+            <summary>
+            obtient ou défini la visibilité de la fenêtre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseNativeWindow.HandleCreated">
+            <summary>
+            renvoi true si le handle de la fenêtre est créer
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.IHintWindow">
+            <summary>
+            interface pour à implémenter pour personaliser le paint du hint.
+            ou dérivez de la classe <see cref="T:Genius.Controls.NativeWindow.BaseHintWindow"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.IHintWindow.ShowHint(System.Int32,System.Int32)">
+            <summary>
+            affichage du hint a la position x, y
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.IHintWindow.Hide">
+            <summary>
+            masque le fenêtre du hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.IHintWindow.Node">
+            <summary>
+            le noeud en cours pour le hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.IHintWindow.DisplayColumn">
+            <summary>
+            la colonne en cours pour le hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.IHintWindow.Text">
+            <summary>
+            le texte du hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.IHintWindow.IsVisible">
+            <summary>
+            la fenêtre du hint est-elle visible
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NativeWindow.BaseHintWindow.CalculateSize(System.Drawing.Graphics)">
+            <summary>
+            à surcharger par les descendant pour renvoyer la taille de la fenêtre de
+            hint
+            </summary>
+            <param name="g"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.NativeWindow.BaseHintWindow.DoPaint(System.Drawing.Graphics)">
+            <summary>
+            à surcharger par les descendants, pour customiser le paint
+            </summary>
+            <param name="g"></param>
+        </member>
+        <member name="M:Genius.Controls.NativeWindow.BaseHintWindow.ShowHint(System.Int32,System.Int32)">
+            <summary>
+            afficher le hint
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+        </member>
+        <member name="M:Genius.Controls.NativeWindow.BaseHintWindow.Hide">
+            <summary>
+            cacher le hint
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NativeWindow.BaseHintWindow.Dispose">
+            <summary>
+            dispose du hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseHintWindow.Font">
+            <summary>
+            la font utilisée pour le hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseHintWindow.DisplayColumn">
+            <summary>
+            colonne en cours du display
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseHintWindow.Text">
+            <summary>
+            le texte à afficher dans le hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseHintWindow.Node">
+            <summary>
+            le noeud concerner par le hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NativeWindow.BaseHintWindow.IsVisible">
+            <summary>
+            le hint est-il visible
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.GeniusLinearGradientBrush">
+            <summary>
+            Summary description for GeniusLinearGradientBrush.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusLinearGradientBrush.#ctor(System.Drawing.Color)">
+            <summary>
+            constructeur
+            </summary>
+            <param name="aSolidColor">à partir d'un couleur</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusLinearGradientBrush.#ctor(System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            construteur à partir de deux couleurs
+            </summary>
+            <param name="begin">couleur de debut</param>
+            <param name="end">couleur de fin</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusLinearGradientBrush.#ctor(System.Drawing.Color,System.Drawing.Color,System.Single)">
+            <summary>
+            constructeur avec deux couleurs et un angle
+            </summary>
+            <param name="begin">couleur de début</param>
+            <param name="end">couleur de fin</param>
+            <param name="angle">angle</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusLinearGradientBrush.#ctor(System.Drawing.Brush)">
+            <summary>
+            constructeur à partir d'un brush
+            </summary>
+            <param name="aBrush"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusLinearGradientBrush.GetBrush">
+            <summary>
+            construit un brush mais à partir d'un rectangle vide
+            cette méthode ne doit pas être utilisée si <see cref="P:Genius.Controls.GeniusLinearGradientBrush.BeginColor"/> et <see cref="P:Genius.Controls.GeniusLinearGradientBrush.EndColor"/> sont valides
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusLinearGradientBrush.GetBrush(System.Drawing.Rectangle)">
+            <summary>
+            construit un <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush"/>, ou un <see cref="T:System.Drawing.SolidBrush"/>
+            </summary>
+            <param name="aRect"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusLinearGradientBrush.Dispose">
+            <summary>
+            dispose le brush contenu, si le cette structure à été instancié à partir d'un brush
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.GeniusLinearGradientBrush.Empty">
+            <summary>
+            réprésente un Brusg vide
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusLinearGradientBrush.Color">
+            <summary>
+            couleur du brush, si on modifie cette propriété, le brush sera
+            uni, il faut affecter <see cref="P:Genius.Controls.GeniusLinearGradientBrush.BeginColor"/> et <see cref="P:Genius.Controls.GeniusLinearGradientBrush.EndColor"/>
+            pour obtenir un brush à deux couleur
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusLinearGradientBrush.BeginColor">
+            <summary>
+            couleur de début du gradient
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusLinearGradientBrush.EndColor">
+            <summary>
+            couleur de fin pour le gradient
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusLinearGradientBrush.Angle">
+            <summary>
+            angle du gradient
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusLinearGradientBrush.IsEmpty">
+            <summary>
+            renvoi true si le brush est vide et que <see cref="P:Genius.Controls.GeniusLinearGradientBrush.Color"/> est vide
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Colors.GeniusPen">
+            <summary>
+            cette classe est surtout présente pour le designer de visual studio
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Colors.GeniusPen.#ctor(System.Drawing.Color,System.Single)">
+            <summary>
+            contructeur
+            </summary>
+            <param name="aColor">couleur du stylo</param>
+            <param name="aWidth">épaisseur</param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Colors.GeniusPen.#ctor(System.Drawing.Color,System.Single,System.Drawing.Drawing2D.DashStyle)">
+            <summary>
+            constructeur
+            </summary>
+            <param name="aColor"></param>
+            <param name="aWidth"></param>
+            <param name="aStyle"></param>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Colors.GeniusPen.Color">
+            <summary>
+            couleur du stylo
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Colors.GeniusPen.Width">
+            <summary>
+            épaisseur du stylo
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Colors.GeniusPen.Style">
+            <summary>
+            style du stylo
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Converter.GeniusBaseConverter">
+            <summary>
+            TypeConverter de base pour tout les autres convertisseur de cette assembly
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusBaseConverter.#ctor">
+            <summary>
+            construteur par défaut
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusBaseConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            return true si le type source est une <see cref="T:System.String"/>
+            </summary>
+            <param name="context"></param>
+            <param name="sourceType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusBaseConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <summary>
+            renvoi true si le type est <see cref="T:System.ComponentModel.Design.Serialization.InstanceDescriptor"/>, sinon c'est l'ancêtre qui gère
+            </summary>
+            <param name="context"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusBaseConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            renvoi true, pour indiqeur que les propriétés sont supportées
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Converter.GeniusLinearGradientBrushConverter">
+            <summary>
+            convertiseur pour le <see cref="T:Genius.Controls.GeniusLinearGradientBrush"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusLinearGradientBrushConverter.#ctor">
+            <summary>
+            constructeur par défaut
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusLinearGradientBrushConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])">
+            <summary>
+            renvoi la liste des propriétés disponible pour l'inspecteur de propriétés
+            </summary>
+            <param name="context"></param>
+            <param name="value"></param>
+            <param name="attributes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusLinearGradientBrushConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            Convertit un <see cref="T:Genius.Controls.GeniusLinearGradientBrush"/> en string ou en <see cref="T:System.ComponentModel.Design.Serialization.InstanceDescriptor"/>
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusLinearGradientBrushConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            convertit un chaîne en <see cref="T:Genius.Controls.GeniusLinearGradientBrush"/>
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusLinearGradientBrushConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            indique que la création d'instance est supporté par le converter
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusLinearGradientBrushConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)">
+            <summary>
+            créer un instance de <see cref="T:Genius.Controls.GeniusLinearGradientBrush"/>
+            </summary>
+            <param name="context"></param>
+            <param name="propertyValues"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Converter.GeniusPenConverter">
+            <summary>
+            Summary description for GeniusPenConverter.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusPenConverter.#ctor">
+            <summary>
+            constructeur par défaut
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusPenConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="value"></param>
+            <param name="attributes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusPenConverter.GetCreateInstanceSupported(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusPenConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="propertyValues"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusPenConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <param name="destinationType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Converter.GeniusPenConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="context"></param>
+            <param name="culture"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Core.Colonnes">
+            <summary>
+            Collections des colonnes
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.#ctor(Genius.Controls.GeniusHeader)">
+            <summary>
+            constructeur par défaut, mais vous n'avez pas besoin de 
+            de créer cette collections
+            </summary>
+            <param name="aOwner"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.IndexOf(Genius.Controls.GeniusTreeViewColonne)">
+            <summary>
+            renvoi l'index d'un colonne
+            </summary>
+            <param name="aCol">la colonne dont on désire l'index</param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.Add(Genius.Controls.GeniusTreeViewColonne)">
+            <summary>
+            ajout d'une colonne, mais passé plutôt par <see cref="M:Genius.Controls.GeniusHeader.Add"/>
+            </summary>
+            <param name="aCol"></param>
+            <returns>la position dans la liste</returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.AddRange(Genius.Controls.GeniusTreeViewColonne[])">
+            <summary>
+            ajoute une liste de colonnes
+            </summary>
+            <param name="actions"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.OnClear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.OnInsert(System.Int32,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.OnSet(System.Int32,System.Object,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="oldValue"></param>
+            <param name="newValue"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.Colonnes.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <param name="value"></param>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.Colonnes.Item(System.Int32)">
+            <summary>
+            renvoi une instance de <see cref="T:Genius.Controls.GeniusTreeViewColonne"/> à l'index index
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Core.INode">
+            <summary>
+            interface de maniement d'un noeud
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.INode.Find(System.String)">
+            <summary>
+            renvoi le premier noeud dont la propriété <see cref="P:Genius.Controls.TreeView.Core.INode.Text"/>, correspond au paramètre
+            </summary>
+            <param name="aText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.INode.Find(System.Object)">
+            <summary>
+            renvoi le premier noeud dont la data correspond au paramètre
+            </summary>
+            <param name="aData"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Height">
+            <summary>
+            Hauteur du noeud
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Index">
+            <summary>
+            index dans la liste de son père
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.ImageIndex">
+            <summary>
+            l'index de l'image à utiliser lors du dessin, -1 pas d'image
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.ImageStateIndex">
+            <summary>
+            index de l'image d'état
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Data">
+            <summary>
+            permet de stockée une donnée utilisateur, sur chaque noeud
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Text">
+            <summary>
+            Texte du noeud, dans le cas d'un affichage en mode grille, cette propriété représente 
+            le texte de la colonne principale
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.State">
+            <summary>
+            état du noeud, <see cref="F:Genius.Controls.TreeView.Core.NodeState.Visible"/> et <see cref="F:Genius.Controls.TreeView.Core.NodeState.Selected"/> ne
+            peuvent pas être modifié via cette propriété
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.IsSelected">
+            <summary>
+            renvoi true si le noeud est sélectionné
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.First">
+            <summary>
+            renvoi le premier enfant du noeud
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Last">
+            <summary>
+            renvoi le dernier enfant du noeud
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.NextVisible">
+            <summary>
+            renvoi le prochain noeud visible
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.PrevVisible">
+            <summary>
+            renvoi le noeud visible précédent
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.NextSibling">
+            <summary>
+            renvoi le noeud frèere suivant
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.PrevSibling">
+            <summary>
+            renvoi le noeud frère précédent
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Count">
+            <summary>
+            renvoi le nombre d'enfant
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Enumerable">
+            <summary>
+            permet d'énumérer les noeuds enfants
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Parent">
+            <summary>
+            renvoi le parent du noeud en cours
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.IsExpanded">
+            <summary>
+            renvoi true si le noeud est étendu
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.Level">
+            <summary>
+            renvoi le niveau du noeud à partir de la racine
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.INode.IsVisible">
+            <summary>
+            retourne true si le noeud est visible
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Core.INodeEnumerable">
+            <summary>
+            interface d'énumération
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.INodeEnumerable.GetNodes">
+            <summary>
+            renvoi un <see cref="T:System.Collections.IEnumerable"/> sur l'ensemble des noeuds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.INodeEnumerable.GetNodes(System.Boolean)">
+            <summary>
+            renvoi l'ensemble des noeuds d'un niveau ou plus
+            </summary>
+            <param name="recurse"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.INodeEnumerable.GetVisibleNodes(System.Boolean)">
+            <summary>
+            renvoi l'ensemble des noeuds visible d'un niveau ou plus
+            </summary>
+            <param name="recurse"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Core.Node">
+            <summary>
+            Summary description for Node.
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Core.NodeState">
+            <summary>
+            état du noeud
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Core.NodeState.Visible">
+            <summary>
+            visibilité
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Core.NodeState.Expanded">
+            <summary>
+            le noeud est étendu
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Core.NodeState.Checked">
+            <summary>
+            le noeud est coché
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Core.NodeState.HasChildren">
+            <summary>
+            le noeud possède des enfants
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Core.NodeState.Selected">
+            <summary>
+            le noeud est selectioné
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Core.NodeState.HasCheck">
+            <summary>
+            le noeud possède un case à coché
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Core.NodeState.Signaled">
+            <summary>
+            le noeud est "signalé"
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Core.NodeEnumerator">
+            <summary>
+            classe d'énumération pour les noeuds
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.NodeEnumerator.GetEnumerator">
+            <summary>
+            renvoi un <see cref="T:System.Collections.IEnumerator"/> sur un ensemble de noeuds
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Core.NodeEnumerator.MoveNext">
+            <summary>
+            avance l'énumération, et renvoi true si <see cref="P:Genius.Controls.TreeView.Core.NodeEnumerator.Current"/> est valide 
+            </summary>
+            <returns>true si <see cref="P:Genius.Controls.TreeView.Core.NodeEnumerator.Current"/> est valide</returns>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Core.NodeEnumerator.Current">
+            <summary>
+            renvoi le noeud en cours d'énumération, de type <see cref="T:Genius.Controls.TreeView.Core.INode"/>
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.Nodes.OnInitNode">
+            <summary>
+            OnInitNode n'est pas un event car cela ralenti l'execution
+            avec cette delegate l'ajout de 1 000 000  de noeud prend 2590 ms
+            sans cette delegate l'ajout de 1 000 000  de noeud prend 1685 ms
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.Nodes.NodeByIndex(Genius.Controls.TreeView.Core.Node,System.Int32)">
+            <summary>
+            récupération du index ième node
+            </summary>
+            <param name="aParent"></param>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Genius.Controls.Nodes.Count">
+            <summary>
+             renvoi le nombre de noeud à la racine
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.Nodes.TotalCount">
+            <summary>
+            renvoi le nombre total de noeuds
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Core.Set">
+            <summary>
+            Summary description for Set.
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Editors.ComboBoxEditor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase">
+            <summary>
+            classe de base pour l'édition
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.ITreeViewEdit">
+            <summary>
+            Summary description for ITreeViewEdit.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.ITreeViewEdit.BeginEdit(Genius.Controls.TreeView.Core.INode,System.Int32,System.Drawing.Rectangle)">
+            <summary>
+            demarrage de l'édition
+            </summary>
+            <param name="aNode">le noeud en cours d'édition</param>
+            <param name="aCol">la colonne en cours d'édition</param>
+            <param name="aRect">le rectangle d'édition</param>
+        </member>
+        <member name="M:Genius.Controls.ITreeViewEdit.EndEdit">
+            <summary>
+            fin de l'édition
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.ITreeViewEdit.CancelEdit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.ITreeViewEdit.OnKeyDown">
+            <summary>
+            l'implémentation de ITreeViewEDit, doit appeler cet event lors de l'appuie sur une touche
+            car le TreeView gère le Escape et Enter
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.ITreeViewEdit.EditRect">
+            <summary>
+            le rectangle d'édition
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.ITreeViewEdit.Control">
+            <summary>
+            le control associé à l'édition
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.FNode">
+            <summary>
+            le noeud en cours d'édition
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.FCol">
+            <summary>
+            la colonne en cours d'édition
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.FTreeView">
+            <summary>
+            le treeview
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.FEditRect">
+            <summary>
+            Rectangle de l'édition
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.FControl">
+            <summary>
+            Controle associé à l'édition
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.#ctor(Genius.Controls.GeniusTreeView)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="tv"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.BeginEdit(Genius.Controls.TreeView.Core.INode,System.Int32,System.Drawing.Rectangle)">
+            <summary>
+            
+            </summary>
+            <param name="aNode"></param>
+            <param name="aCol"></param>
+            <param name="aRect"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.EndEdit">
+            <summary>
+            fin d'édition
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.CancelEdit">
+            <summary>
+            annulation de l'édition
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.DoKeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.DoSetBounds(System.Drawing.Rectangle)">
+            <summary>
+            indique aux descendants qu'il doivent retailler leur zone d'édition
+            </summary>
+            <param name="aRect"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.CreateEditorControl">
+            <summary>
+            à dériver et créer votre control
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.OnKeyDown">
+            <summary>
+            cet évènement sert au treeview
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.EditRect">
+            <summary>
+            Rectangle de la zone d'édition
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.Value">
+            <summary>
+            valeur de l'éditeur
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.GeniusTreeViewEditorBase.Control">
+            <summary>
+            Control associé à l'editeur
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.ComboBoxEditor.#ctor(Genius.Controls.GeniusTreeView)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="tv"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.ComboBoxEditor.CreateEditorControl">
+            <summary>
+            création effective du control (Combobox)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.ComboBoxEditor.Value">
+            <summary>
+            retourne le texte du combo
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Editors.GeniusTreeViewEditor">
+            <summary>
+            classe d'exemple représentant une implémentation  <see cref="T:Genius.Controls.ITreeViewEdit"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditor.#ctor(Genius.Controls.GeniusTreeView)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="tv"></param>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditor.CreateEditorControl">
+            <summary>
+            création du textebox éditor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.GeniusTreeViewEditor.BeginEdit(Genius.Controls.TreeView.Core.INode,System.Int32,System.Drawing.Rectangle)">
+            <summary>
+            démarrage de l'édition
+            </summary>
+            <param name="aNode"></param>
+            <param name="aCol"></param>
+            <param name="aRect"></param>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.GeniusTreeViewEditor.Value">
+            <summary>
+            valeur de l'editeur
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Editors.TreeViewTextBoxEditor">
+            <summary>
+            Summary description for TreeViewTextBoxEditor.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.TreeViewTextBoxEditor.#ctor">
+            <summary>
+            constructeur par défaut
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.Editors.TreeViewTextBoxEditor.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            gestion de startComposition et EndComposition
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.TreeViewTextBoxEditor.CreateParams">
+            <summary>
+            suppression du drag de fichier et de parent notify
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.TreeViewTextBoxEditor.SelectedText">
+            <summary>
+            renvoi le texte selectionner
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.TreeViewTextBoxEditor.Text">
+            <summary>
+            renvoi le text du richeTextBoxou l'ancien text mémorisé avant le demarrage
+            de la composition
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.Editors.TreeViewTextBoxEditor.Bounds">
+            <summary>
+            zone de l'edition
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Serialization.GeniusTreeViewSerializer">
+            <summary>
+            Summary description for GeniusTreeViewSerializer.
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.Constantes">
+            <summary>
+            Summary description for Constantes.
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.Constantes.NoColumn">
+            <summary>
+            valeur indiquant que la colonne n'en n'est pas une
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.Constantes.InvalideColumn">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.DragForm">
+            <summary>
+            classe fenêtre utilisée pour le drag-drop
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.GeniusNativeWindow">
+            <summary>
+            Summary description for GeniusNativeWindow.
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NodeEventArgs">
+            <summary>
+            Classe de base pour les evènements du <see cref="T:Genius.Controls.GeniusTreeView"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NodeEventArgs.#ctor(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            construteur par défaut
+            </summary>
+            <param name="aNode"></param>
+        </member>
+        <member name="P:Genius.Controls.NodeEventArgs.Node">
+            <summary>
+            noeud concerner par l'évènement en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NodeCellEventArgs">
+            <summary>
+            classe de base de gestion des évènements lors du mode grille
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NodeCellEventArgs.#ctor(Genius.Controls.TreeView.Core.INode,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="aNode"></param>
+            <param name="aDisplayColumn"></param>
+        </member>
+        <member name="P:Genius.Controls.NodeCellEventArgs.DisplayColumn">
+            <summary>
+            Colonne concernée par l'évènement en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.ExpandEventArgs">
+            <summary>
+            évènement lors de l'expand d'un noeud
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.ExpandEventArgs.#ctor(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="aNode"></param>
+        </member>
+        <member name="F:Genius.Controls.ExpandEventArgs.CanExpand">
+            <summary>
+            autorise ou pas l'expansion du noeud en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.CollapseEventArgs">
+            <summary>
+            évènement lors de replie d'un noeud
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.CollapseEventArgs.#ctor(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="aNode"></param>
+        </member>
+        <member name="F:Genius.Controls.CollapseEventArgs.CanCollapse">
+            <summary>
+            autosie ou pas le replie du noeuds en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.CheckEventArgs">
+            <summary>
+            <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeCheck"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.CheckEventArgs.#ctor(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            construteur par défaut
+            </summary>
+            <param name="aNode"></param>
+        </member>
+        <member name="F:Genius.Controls.CheckEventArgs.CanCheck">
+            <summary>
+            autorise ou pas le check sur le noeud courant
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.UnCheckEventArgs">
+            <summary>
+            évènement sur le "uncheck", <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeUnCheck"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.UnCheckEventArgs.#ctor(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="aNode"></param>
+        </member>
+        <member name="F:Genius.Controls.UnCheckEventArgs.CanUnCheck">
+            <summary>
+            peut-on décocher le noeud en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.CanEditEventArgs">
+            <summary>
+            voir <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeEdit"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.CanEditEventArgs.#ctor(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="aNode"></param>
+        </member>
+        <member name="F:Genius.Controls.CanEditEventArgs.CanEdit">
+            <summary>
+            peuit on editer le noeud en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.CanSelectEventArgs">
+            <summary>
+            <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeSelect"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.CanSelectEventArgs.#ctor(Genius.Controls.TreeView.Core.INode,System.Int32)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="aNode"></param>
+            <param name="colindex"></param>
+        </member>
+        <member name="F:Genius.Controls.CanSelectEventArgs.CanSelect">
+            <summary>
+            puis-je selectionner le noeud
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.CanSelectEventArgs.DisplayColumn">
+            <summary>
+            la colonne que l'on tente de selectionné, en mode grille
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.CanUnSelectEventArgs">
+            <summary>
+            <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeUnSelect"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.CanUnSelectEventArgs.#ctor(Genius.Controls.TreeView.Core.INode,System.Int32)">
+            <summary>
+            constrcuteur par défaut, vous n'avez pas à instancier cette classe
+            </summary>
+            <param name="aNode"></param>
+            <param name="colindex"></param>
+        </member>
+        <member name="F:Genius.Controls.CanUnSelectEventArgs.CanUnSelect">
+            <summary>
+            peut deselectioner le noeuds
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.CanUnSelectEventArgs.DisplayColumn">
+            <summary>
+            la colonne concerné
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.SelectedEventArgs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.SelectedEventArgs.#ctor(Genius.Controls.TreeView.Core.INode,System.Int32)">
+            <summary>
+            constructeur
+            </summary>
+            <param name="aNode"></param>
+            <param name="colindex"></param>
+        </member>
+        <member name="P:Genius.Controls.SelectedEventArgs.DisplayColumn">
+            <summary>
+            la display colonne concernée
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NodeTextEventArgs">
+            <summary>
+            arguments de l'évènement <see cref="E:Genius.Controls.GeniusTreeView.OnGetNodeText"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NodeTextEventArgs.#ctor(Genius.Controls.TreeView.Core.INode,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="aNode"></param>
+            <param name="colindex"></param>
+            <param name="defaultText"></param>
+        </member>
+        <member name="F:Genius.Controls.NodeTextEventArgs.Text">
+            <summary>
+            le texte
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.PaintNodeEventArgs">
+            <summary>
+            argument de l'évènement <see cref="E:Genius.Controls.GeniusTreeView.OnAfterCellPainting"/>, 
+            <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeCellPainting"/>, <see cref="E:Genius.Controls.GeniusTreeView.OnAfterPainting"/>,
+            <see cref="E:Genius.Controls.GeniusTreeView.OnAfterNodePainting"/>,<see cref="E:Genius.Controls.GeniusTreeView.OnPaintNodeBackGround"/>,
+            <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeNodePainting"/>, <see cref="E:Genius.Controls.GeniusTreeView.OnBeforePainting"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.PaintNodeEventArgs.#ctor(Genius.Controls.TreeView.PaintInfo)">
+            <summary>
+            
+            </summary>
+            <param name="paintinfo"></param>
+        </member>
+        <member name="P:Genius.Controls.PaintNodeEventArgs.Info">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.CanDragToEventArgs.DropNode">
+            <summary>
+            le noeud qui recoit le drop
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NodeEditorEventArgs">
+            <summary>
+            classe liée à la création d'un éditeur
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.NodeEditorEventArgs.Editor">
+            <summary>
+            Placez votre propre éditeur
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.NodeEditorEventArgs.DisplayColumn">
+            <summary>
+            indique la colonne en édition
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.ImageIndexType">
+            <summary>
+            type d'image demandée lors de l'évènement <see cref="E:Genius.Controls.GeniusTreeView.OnGetImageIndex"/>
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.ImageIndexType.NormalImage">
+            <summary>
+            image normal
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.ImageIndexType.StateImage">
+            <summary>
+            image d'état
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NodeImageIndexEventArgs">
+            <summary>
+            Classe associée à l'évènement <see cref="E:Genius.Controls.GeniusTreeView.OnGetImageIndex"/>
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NodeDeleteEventArgs">
+            <summary>
+            argument pour l'événement <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeDelete"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NodeDeleteEventArgs.#ctor(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+        </member>
+        <member name="F:Genius.Controls.NodeDeleteEventArgs.CanDelete">
+            <summary>
+            peut-on uspprimer le noeud en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.EditEventArgs">
+            <summary>
+            classe utiliser lors de l'évènement <see cref="E:Genius.Controls.GeniusTreeView.OnInitEdit"/>, <see cref="E:Genius.Controls.GeniusTreeView.OnAfterEdit"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.EditEventArgs.#ctor(Genius.Controls.TreeView.Core.INode,System.Int32,Genius.Controls.ITreeViewEdit)">
+            <summary>
+            constructeur
+            </summary>
+            <param name="n"></param>
+            <param name="aDisplayColumn"></param>
+            <param name="editor"></param>
+        </member>
+        <member name="P:Genius.Controls.EditEventArgs.Editor">
+            <summary>
+            editeur en cours
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.NodeHintWindowEventArgs">
+            <summary>
+            EventArgs pour la création du Hint
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.NodeHintWindowEventArgs.#ctor">
+            <summary>
+            constructeur par défaut
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.NodeHintWindowEventArgs.HintWindow">
+            <summary>
+            user HintWindow
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.SortDirection">
+            <summary>
+            dicretion du tri
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.SortDirection.Ascending">
+            <summary>
+            tri ascendant
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.SortDirection.Descending">
+            <summary>
+            tri descendant
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.GeniusHeader">
+            <summary>
+            classe représentant le header
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.#ctor(Genius.Controls.GeniusTreeView)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="aTv"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.Add">
+            <summary>
+            ajout d'une colonne dans le header
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.GetWidthFromStart(System.Int32)">
+            <summary>
+            retourne la largeur total de toutes les colonnes
+            précédentes ansi que aDisplayIndex
+            </summary>
+            <param name="aDisplayIndex"></param>
+            <returns>la largeur totale des colonnes includant aDisplayIndex</returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.Left(System.Int32)">
+            <summary>
+            renvoi la position gauche d'une colonne
+            </summary>
+            <param name="aDisplayIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.Left(Genius.Controls.GeniusTreeViewColonne)">
+            <summary>
+            renvoi la position gauche d'une colonne
+            </summary>
+            <param name="aCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.IndexOf(Genius.Controls.GeniusTreeViewColonne)">
+            <summary>
+            renvoi l'index d'une colonne
+            </summary>
+            <param name="aCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.IndexOfDisplay(Genius.Controls.GeniusTreeViewColonne)">
+            <summary>
+            renvoi l'index visuel d'une colonne
+            </summary>
+            <param name="aCol"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.ColumnAt(System.Int32)">
+            <summary>
+            quelle colonne sous x
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.ColumnIndexAt(System.Int32)">
+            <summary>
+            quelle index de colonne sous x
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.DisplayColonnes(System.Int32)">
+            <summary>
+            renvoi la indexième colonne du tableau des DisplayColonnes
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.DisplayIndexToIndex(System.Int32)">
+            <summary>
+            retourne index d'une colonne par rapport à son index du tableau des 
+            DisplayColonnes
+            </summary>
+            <param name="aDisplayIndex"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.AddRange(Genius.Controls.GeniusTreeViewColonne[])">
+            <summary>
+            ajoute un tableau de colonne
+            </summary>
+            <param name="range"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.MoveColonneTo(System.Int32,System.Int32)">
+            <summary>
+            deplace une colonne, vers une position
+            </summary>
+            <param name="aDisplayStart">index de la colonne à déplacer, index visuel</param>
+            <param name="aDisplayTo">index </param>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusHeader.GetDisplays">
+            <summary>
+            renvoi la liste des colonnes dans l'ordre d'affichage
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:Genius.Controls.GeniusHeader.OnDrawHeaderCol">
+            <summary>
+            évènement paint sur le header
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusHeader.FixedColumnCount">
+            <summary>
+            le nombre de colonne fixe à gauche
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusHeader.FixedColumnWidth">
+            <summary>
+            retourne la largeur total des colonnes fixes
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusHeader.VisibleColumns">
+            <summary>
+            l'ensemble des colonnes visible, dans l'ordre des colonnes affichées
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusHeader.Displays">
+            <summary>
+            liste des colonne affichés, identique aux colonnes à l'ordre près
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusHeader.SortColumn">
+            <summary>
+            index de la colonne triée
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusHeader.Count">
+            <summary>
+            renvoi le nombre de colonnes
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusHeader.Colonnes">
+            <summary>
+            renvoi la liste des colonnes définies
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.DragPosition">
+            <summary>
+            énumération de la position du noeud en cours de drag par rapport au noeud "drop"
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DragPosition.None">
+            <summary>
+            null part
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DragPosition.Before">
+            <summary>
+            avant le noeud indiqué dans l'évènement
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DragPosition.After">
+            <summary>
+            après le noeud indiqué dans l'évènement
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DragPosition.Under">
+            <summary>
+            en dessous du noeud indiqué dans l'évènement
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.DrawingOption">
+            <summary>
+            option de dessin
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.HideSelection">
+            <summary>
+            cache la selection, si le treeview n'a pas le focus
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.HideFocusRect">
+            <summary>
+            cache le focusrect
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.HideButtons">
+            <summary>
+            cache les "boutons" deplier/replier
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.HideTreeLines">
+            <summary>
+            cache les lignes du treeview
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.ShowVertLines">
+            <summary>
+            affiche les lignes verticales en mode grille
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.ShowHorzLines">
+            <summary>
+            affiche les lignes horizontales en mode grille
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.ShowGridLines">
+            <summary>
+            Combinaison de <see cref="F:Genius.Controls.DrawingOption.ShowVertLines"/> et <see cref="F:Genius.Controls.DrawingOption.ShowHorzLines"/>
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.AlwaysHideSelection">
+            <summary>
+            ne dessine jamais la selection
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.DrawingOption.Default">
+            <summary>
+            valeur par défaut
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.IncrementalSearchEnum">
+            <summary>
+            option pour la recherche incrémentale
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.IncrementalSearchEnum.None">
+            <summary>
+            la recherche est désactivée
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.IncrementalSearchEnum.All">
+            <summary>
+            recherche partout, même les noeuds repliées
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.IncrementalSearchEnum.VisibleOnly">
+            <summary>
+            recherche seulement sur les noeuds visibles
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.SearchStartEnum">
+            <summary>
+            ou démarre la recherche incrémentale, <see cref="P:Genius.Controls.GeniusTreeView.SearchStart"/>
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.SearchStartEnum.AlwaysStartOver">
+            <summary>
+            commence la recherche toujours au début
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.SearchStartEnum.LastHit">
+            <summary>
+            commence la recherche depuis le dernier noeud trouvé
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.SearchStartEnum.FocusedNode">
+            <summary>
+            utilise le noeud sélectionné pour commencer la recherche
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.SearchDirectionEnum">
+            <summary>
+            le sens de la recherche incrémentale, <see cref="P:Genius.Controls.GeniusTreeView.SearchDirection"/>
+            pour changer de sens, utilisez la touche BackSpace
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.SearchDirectionEnum.Forward">
+            <summary>
+            en avant
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.SearchDirectionEnum.Backward">
+            <summary>
+            en arrière
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnNodeFontDelegate">
+            <summary>
+            déléguée pour la demande de la font pour un noeud
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnNodeClickDelegate">
+            <summary>
+            déléguée pour le clic d'un noeud
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.GeniusTreeView">
+            <summary>
+            le contrôle visuel affichant un arbre
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.GeniusTreeView.FCachedText">
+            <summary>
+            sert lors du tri afin d'eviter de demander sans arrêt 
+            le texte du noeud
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.GeniusTreeView.FMargin">
+            <summary>
+            la marge à laisser au début de la colonne principale
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.GeniusTreeView.FIncrementalSearch">
+            <summary>
+            dernier noeud trouvé
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.GeniusTreeView.FDataIsStringProvider">
+            <summary>
+            indique si le texte du noeud est fourni par la donnée associée
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.#ctor">
+            <summary>
+            constructeur par défaut
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.GetTextRect(Genius.Controls.TreeView.Core.Node)">
+            <summary>
+            renvoi le rectangle du texte de la colonne principale
+            </summary>
+            <param name="aNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            point d'ntrée du paint
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.Dispose(System.Boolean)">
+            <summary>
+            dispose du control
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.OnSizeChanged(System.EventArgs)">
+            <summary>
+            changement de la taille du treeview
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            une touche est pressé lancement de la recherche incrémentale
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.OnLostFocus(System.EventArgs)">
+            <summary>
+            redessin de la selection sur la perte de focus
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            Gestion du header qui se trouve dans la zone NonClient
+            </summary>
+            <param name="m"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.Add(Genius.Controls.TreeView.Core.INode,System.Object)">
+            <summary>
+            Ajout d'un noeud
+            </summary>
+            <param name="aParent">le noeud parent</param>
+            <param name="aData">la donnée utilisateur à associée</param>
+            <returns><see cref="T:Genius.Controls.TreeView.Core.INode"/></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.Add(Genius.Controls.TreeView.Core.INode,System.String,System.Object)">
+            <summary>
+            ajout d'un noeud
+            </summary>
+            <param name="aParent"></param>
+            <param name="aText"></param>
+            <param name="aData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.Delete(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            enlève un noeud de l'arbre
+            </summary>
+            <param name="n">le noeud à supprimer</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.Clear">
+            <summary>
+            vide l'arbre
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.ClearChild(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            vide un noeud de ses enfants
+            </summary>
+            <param name="aParent">le noeud à vider</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.TopNode">
+            <summary>
+            retourne le premier noeud visible du control
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.BottomNode">
+            <summary>
+            le dernier noeud visible du control
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.First">
+            <summary>
+            renvoi le premier noeud
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.FirstVisible">
+            <summary>
+            renvoi le premier noeud visible
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.ExpandCollapseNode(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            déplie ou replie un noeud
+            </summary>
+            <param name="aNode">le noeud à replier, <seealso cref="T:Genius.Controls.TreeView.Core.INode"/></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.ExpandAll(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            deplie le noeud et tous ses fils
+            </summary>
+            <param name="aNode">le noeud à deplier</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.ExpandAll">
+            <summary>
+            deplie tous les noeuds de l'arbre
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.CollapseAll(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            replie le noeud et tous ses fils
+            </summary>
+            <param name="aNode">le noeud à replier</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.GetNodeAtPoint(System.Drawing.Point)">
+            <summary>
+            renvoi le noeud sous le point pt
+            </summary>
+            <param name="pt">le point à tester</param>
+            <returns>un <see cref="T:Genius.Controls.TreeView.Core.INode"/>, ou null si aucun point</returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.GetNodeAtPoint(System.Drawing.Point,System.Int32@)">
+            <summary>
+            renvoi le noeud sous le point pt, ainsi que la colonne concernée
+            </summary>
+            <param name="pt">le point à tester</param>
+            <param name="aDisplayColumn">la colonne concernée, en mode grille uniquement</param>
+            <returns>un <see cref="T:Genius.Controls.TreeView.Core.INode"/></returns>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.CheckNode(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            check un noeud
+            </summary>
+            <param name="n"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.UnCheckNode(Genius.Controls.TreeView.Core.INode)">
+            <summary>
+            uncheck un noeud
+            </summary>
+            <param name="n"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.BeginUpdate">
+            <summary>
+            lors d'ajout, de suppression massive,utilisez cette méthode
+            afin d'empêcher le raffraichissement pendant vos opérations
+            ATTENTION : à chaque appel à <see cref="M:Genius.Controls.GeniusTreeView.BeginUpdate"/>, il faut un appel à <see cref="M:Genius.Controls.GeniusTreeView.EndUpdate"/>.
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.EndUpdate">
+            <summary>
+            la méthode correspondante à <see cref="M:Genius.Controls.GeniusTreeView.BeginUpdate"/>
+            lorsque le nombre d'appel à EndUpdate, correspond au nombre d'appel
+            à <see cref="M:Genius.Controls.GeniusTreeView.BeginUpdate"/>, le control est raffraichit
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.SwapColonnes(System.Int32,System.Int32)">
+            <summary>
+            échange deux colonnes, les index sont des index visuels. 
+            l'index visuel 0, correspond à la première colonne visible à l'écran !
+            </summary>
+            <param name="index1">l'index "visuel" de la première colonne</param>
+            <param name="index2">l'index "visuel" de la deuxième colonne</param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.SortTree(System.Int32,Genius.Controls.SortDirection)">
+            <summary>
+            trie l'arbre en entier, et met à jour le header, en fonction du tri
+            </summary>
+            <param name="aDisplayCol"></param>
+            <param name="aDirection"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.DrawSelectedRectangle(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean)">
+            <summary>
+            dessine une rectangle de plein (<see cref="!:Colors.SelectedColor"/>, <see cref="!:Colors.SelectedUnfocusedColor"/>) /&gt;
+            et eventuellement un rectangle en pointillé
+            </summary>
+            <param name="g"></param>
+            <param name="aRect"></param>
+            <param name="drawFocused"></param>
+        </member>
+        <member name="M:Genius.Controls.GeniusTreeView.DrawFocusedRectangle(System.Drawing.Graphics,System.Drawing.Rectangle)">
+            <summary>
+            dessine un rectangle au couleur de <see cref="!:GeniusTreeView.Colors.FocusedRectangleColor"/>
+            </summary>
+            <param name="g"></param>
+            <param name="aRect"></param>
+        </member>
+        <member name="E:Genius.Controls.GeniusTreeView.OnInitNode">
+            <summary>
+            évènement appelé lors de l'initialisation d'un noeud
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.GeniusTreeView.OnGetHint">
+            <summary>
+            évènement appelé pour demandé le Text du Hint
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.GeniusTreeView.OnGetNodeValue">
+            <summary>
+            recupérer la valeur associé au noeud dans le but de comparaison, pour le tri
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.GeniusTreeView.OnInitEdit">
+            <summary>
+            utilisez cet évènement pour initialiser l'editeur,
+            comme remplir un combobox
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.GeniusTreeView.OnAfterEdit">
+            <summary>
+            survient après l'édition
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.GeniusTreeView.OnCreateEditor">
+            <summary>
+            Permet de définir son propre éditeur
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.GeniusTreeView.OnCellMouseDown">
+            <summary>
+            survient quand on a cliquer sur une cellule
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.ElapsedHint">
+            <summary>
+            obtient ou défini le temps pour l'affichage du Hint
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.AllowEdit">
+            <summary>
+            Permet/interdit l'édition des noeuds
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.AllowDrag">
+            <summary>
+            obtient ou défini la capacité à effectuer un drag avec les noeud présent dans le treeview
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.Alignment">
+            <summary>
+            alilgnement des noeuds en mode arbre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.SelectedNode">
+            <summary>
+            renvoi le noeud selectionné
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.RangeX">
+            <summary>
+            la largeur du scroll horizontal
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.OffsetX">
+            <summary>
+            le déplacement du scroll horizontal
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.DefaultDrawingOption">
+            <summary>
+            les options de dessin <see cref="T:Genius.Controls.DrawingOption"/>
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.DefaultNodeHeight">
+            <summary>
+            la hauteur par défaut des noeuds
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.Indentation">
+            <summary>
+            l'indentation horizontal entre les noeuds
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.Count">
+            <summary>
+            nombre de noeuds à la racine
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.TotalCount">
+            <summary>
+            renvoi le nombre total de noeud dans l'arbre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.ImageList">
+            <summary>
+            obtient ou défini la liste d'images pour décrire un noeud
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.ImageStateList">
+            <summary>
+            obtient ou défini la liste d'images pour représenter l'état d'un noeud
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.ImageCheckList">
+            <summary>
+            obtient ou défini la liste d'images à utiliser pour les case à cochés
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.ShowHeader">
+            <summary>
+            affiche ou cache le header
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.HeaderHeight">
+            <summary>
+            obtient ou défini la hauteur du header
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.UseColumns">
+            <summary>
+            obtient ou défini l'utilisation du treeview en grille
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.Header">
+            <summary>
+            le header
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.HeaderColonnes">
+            <summary>
+            propriétés présente uniquement pour le designer, en runtime utilisez la propriété <see cref="!:Header.Colonnes"/>
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.Colors">
+            <summary>
+            les couleurs de l'arbre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.KeysGridMode">
+            <summary>
+            les touches gauche et droite réagissent normalement
+            en mode grille, alors qu'en mode "Arbre", elles deplie/replie le noeud 
+            sélectionné
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.SelectedColumn">
+            <summary>
+            retourne l'index de la colonne selectionnée
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.DataSource">
+            <summary>
+            un <see cref="T:System.Collections.IEnumerable"/>, dont chaque
+            élément doit être lui même un <see cref="T:System.Collections.IEnumerable"/> pour être énumerer
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.AutoSort">
+            <summary>
+            trie automatique, à chaque ajout de noeud
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.FullRowSelect">
+            <summary>
+            selection de la ligne complète
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.Margin">
+            <summary>
+            marge gauche de l'arbre
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.Enumerable">
+            <summary>
+            renvoi un <see cref="T:Genius.Controls.TreeView.Core.INodeEnumerable"/>
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.IncrementalSearch">
+            <summary>
+            recherche incrémentale
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.SearchColumn">
+            <summary>
+            index de la colonne sur laquelle s'effectue la recherche incrémental
+            l'index est par rapport au colonnes dans le header, et non DisplayColumn
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.DataIsStringProvider">
+            <summary>
+            <see cref="P:Genius.Controls.TreeView.Core.INode.Data"/> fournit le texte pour chaque colonne, en implémentant
+            <see cref="T:Genius.Controls.TreeView.IStringNodeProvider"/>
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.BorderStyle">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeView.UseKeyTab">
+            <summary>
+            utilise la touche tab pour passer de cellule en cellule, en mode grille uniquement
+            ne fonctionne pas avec <see cref="P:Genius.Controls.GeniusTreeView.FullRowSelect"/>
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.GeniusTreeViewColonne">
+            <summary>
+            classe représentant une entête de colonne
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.Alignment">
+            <summary>
+            Alignement horizontal dans le header
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.VAlignment">
+            <summary>
+            alignement vertical dans le header
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.TextAlignment">
+            <summary>
+            alignement du text dans la colonne
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.ForeColor">
+            <summary>
+            couleur du Text
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.HeadColor">
+            <summary>
+            couleur de fond de la colonne dans son header
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.BackColor">
+            <summary>
+            couleur de fond de la colonne
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.AllowSize">
+            <summary>
+            permet à la colonne d'être retaillée
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.Font">
+            <summary>
+            font de la colonne (header)
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GeniusTreeViewColonne.FontColonne">
+            <summary>
+            font de la colonne
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnNodeDelegate">
+            <summary>
+            delegate de base
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnGetHintDelegate">
+            <summary>
+            delegate utiliser avec <see cref="E:Genius.Controls.GeniusTreeView.OnGetHint"/>
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnPaintNodeDelegate">
+            <summary>
+            delegate pour le custom paint
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnCreateEditorDelegate">
+            <summary>
+            méthode délégée liée à la création d'un éditeur 
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnGetImageIndexDelegate">
+            <summary>
+            méthode déléguée afin de recupérer l'index de l'image durant le paint <see cref="E:Genius.Controls.GeniusTreeView.OnGetImageIndex"/>
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.OnCreateHintWindowDelegate">
+            <summary>
+            déléguée pour la création des HintWindow
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.GenuisTreeViewColors">
+            <summary>
+            classe de gestion de l'aspect du <see cref="T:Genius.Controls.GeniusTreeView"/>
+            Tous les <see cref="T:System.Drawing.Pen"/>, <see cref="T:System.Drawing.Brush"/>, sont disposés lors du Dispose de cette classe
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.GenuisTreeViewColors.Dispose">
+            <summary>
+            dispose tous les objets "Couleurs"
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GenuisTreeViewColors.FocusedRectangleColor">
+            <summary>
+            stylo utilisé pour dessiné la selection focused,
+            le rectangle autour de la selection
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GenuisTreeViewColors.FocusedRectanglePenColor">
+            <summary>
+            <see cref="P:Genius.Controls.GenuisTreeViewColors.FocusedRectangleColor"/>
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GenuisTreeViewColors.UnFocusedRectangleColor">
+            <summary>
+            Stylo utilisé pour dessiner le focusRect quand le controle
+            n'est pas "Focused"
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.GenuisTreeViewColors.UnFocusedRectanglePenColor">
+            <summary>
+            <see cref="P:Genius.Controls.GenuisTreeViewColors.UnFocusedRectangleColor"/>
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.HintHelper">
+            <summary>
+            Summary description for HintHelper.
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.HitNodeInfo">
+            <summary>
+            Summary description for HitNodeInfo.
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.ImageKindEnum">
+            <summary>
+            type d'image demandé lors <see cref="E:Genius.Controls.GeniusTreeView.OnGetImageIndex"/>
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.ImageKindEnum.Normal">
+            <summary>
+            demeande de l'index de l'image standard
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.ImageKindEnum.State">
+            <summary>
+            demande de l'index de l'image d'état
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.IStringNodeProvider">
+            <summary>
+            interface à implémenter pour fournir le texte des colonnes.
+            cette interface doit être implémenter par l'objet de <see cref="P:Genius.Controls.TreeView.Core.INode.Data"/>
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.IStringNodeProvider.GetText(System.Int32)">
+            <summary>
+            retourne le texte de la colonne concernée
+            </summary>
+            <param name="aDisplayColumn"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Genius.Controls.NativeMethods">
+            <summary>
+            Summary description for NativeMethods.
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.Lines">
+            <summary>
+            enumération de type flags, pour <see cref="F:Genius.Controls.TreeView.PaintInfo.CellGridLines"/>, 
+            à remplir dans le <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeCellPainting"/>
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Lines.None">
+            <summary>
+            aucune lignes
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Lines.Top">
+            <summary>
+            celle du haut
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Lines.Right">
+            <summary>
+            bord droit
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Lines.Bottom">
+            <summary>
+            bord bas
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Lines.All">
+            <summary>
+            tous
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Lines.Vertical">
+            <summary>
+            bords verticaux
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.Lines.Horizontal">
+            <summary>
+            bord horizontaux
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.TreeView.PaintInfo">
+            <summary>
+            class d'information pour le paint, permet d'échanger des informations
+            entre le user et le paint
+            cette structure est utilisée avec <see cref="!:GeniusTreeView.OnBeginPainting"/>,
+            <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeNodePainting"/>, <see cref="E:Genius.Controls.GeniusTreeView.OnPaintNodeBackGround"/>,
+            <see cref="E:Genius.Controls.GeniusTreeView.OnBeforeCellPainting"/>, <see cref="E:Genius.Controls.GeniusTreeView.OnAfterCellPainting"/>,
+            <see cref="E:Genius.Controls.GeniusTreeView.OnAfterNodePainting"/>,<see cref="!:GeniusTreeView.OnEndPainting"/>
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.DrawingOptions">
+            <summary>
+            les options de dessin du noeud en cours (<see cref="T:Genius.Controls.DrawingOption"/>)
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.DisplayColumn">
+            <summary>
+            la column à dessiner
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.BackColor">
+            <summary>
+            couleur de fond
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.ForeColor">
+            <summary>
+            couleur du texte
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.StringFormat">
+            <summary>
+            format du texte
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.DefaultDrawing">
+            <summary>
+            laisse t-on le dessin se faire par défaut
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.Font">
+            <summary>
+            la font à utiliser
+            </summary>
+        </member>
+        <member name="F:Genius.Controls.TreeView.PaintInfo.CellGridLines">
+            <summary>
+            quelles sont les lignes à dessiner en mode grille ?
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.TreeView.PaintInfo.#ctor">
+            <summary>
+            le constructeur par défaut 
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.PaintInfo.NodeRect">
+            <summary>
+            renvoi le rectangle du noeud pour le dessin
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.PaintInfo.ClipRect">
+            <summary>
+            le rectangle de clip
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.PaintInfo.Node">
+            <summary>
+            le noeud en cours
+            </summary>
+        </member>
+        <member name="P:Genius.Controls.TreeView.PaintInfo.graphics">
+            <summary>
+            le canevas à utiliser pour dessiner
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.ScrollBarsHelper">
+            <summary>
+            classe Helper pour la gestion des scrollbar d'une fenêtre
+            </summary>
+        </member>
+        <member name="T:Genius.Controls.SearchHelper">
+            <summary>
+            classe Helper dédiée à la recherche
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.SearchHelper.#ctor(Genius.Controls.GeniusTreeView)">
+            <summary>
+            constructeur par défaut
+            </summary>
+            <param name="aOwner"></param>
+        </member>
+        <member name="M:Genius.Controls.SearchHelper.HandleIncrementalSearch(System.Char)">
+            <summary>
+            
+            </summary>
+            <param name="keyChar"></param>
+        </member>
+        <member name="T:Genius.Controls.Timers">
+            <summary>
+            class de gestion des timers
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.Timers.#ctor">
+            <summary>
+            constructeur
+            </summary>
+        </member>
+        <member name="M:Genius.Controls.Timers.Timer(Genius.Controls.KindTimer)">
+            <summary>
+            renvoi un timer pour un <see cref="T:Genius.Controls.KindTimer"/>
+            </summary>
+            <param name="aKind"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Genius.Controls.Timers.Start(Genius.Controls.KindTimer)">
+            <summary>
+            démarre un timer de type <see cref="T:Genius.Controls.KindTimer"/>
+            </summary>
+            <param name="aTimer"></param>
+        </member>
+        <member name="M:Genius.Controls.Timers.Stop(Genius.Controls.KindTimer)">
+            <summary>
+            arrête un Timer de type <see cref="T:Genius.Controls.KindTimer"/>
+            </summary>
+            <param name="aTimer"></param>
+        </member>
+        <member name="M:Genius.Controls.Timers.StopAll">
+            <summary>
+            arrête tous les timers
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.Timers.OnBeginEdit">
+            <summary>
+            begin edit demander
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.Timers.OnBeginDragExpand">
+            <summary>
+            expand pendant le drag
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.Timers.OnBeginScroll">
+            <summary>
+            begin scroll demander
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.Timers.OnEndSearch">
+            <summary>
+            endsearch demander
+            </summary>
+        </member>
+        <member name="E:Genius.Controls.Timers.OnBeginHint">
+            <summary>
+            begin hint demander
+            </summary>
+        </member>
+    </members>
+</doc>
